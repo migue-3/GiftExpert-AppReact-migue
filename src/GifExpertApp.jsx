@@ -4,14 +4,14 @@ import { GifGrid } from "./components/GifGrid";
 
 export const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['DRAGON BALL']);
+    const [categories, setCategories] = useState(['RICK AND MORTY']);
 
     const onAddCategory = (newCategory) =>{
 
       if(categories.includes(newCategory) ) return;
         // categories.push('Valorant'); --->>> NO FUNCIONA CON REACT
-       setCategories([ newCategory.toUpperCase(), ...categories ]);
         // setCategories( cat => [...cat, 'Valorant' ] ); ---->>> OTRA MANERA PARA HACER UNA INSERCION EN UN ARREGLO
+       setCategories([ newCategory.toUpperCase(), ...categories ]);
     }
 
   return (
